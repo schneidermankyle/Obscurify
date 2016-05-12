@@ -38,6 +38,7 @@ void MainWindow::on_continue_2_clicked()
     QString content = "";
     std::string path = ui->lineEdit->text().toStdString().substr(0, ui->lineEdit->text().toStdString().find_last_of('/')+1);
     std::string fileName = ui->lineEdit->text().toStdString().substr(ui->lineEdit->text().toStdString().find_last_of('/')+1, ui->lineEdit->text().toStdString().find_last_of('.')+1);
+    std:string fileType = ui->lineEdit->text().toStdString().substr(ui->lineEdit->text().toStdString().find_last_of('.'))
     bool keepSpaces = false;
     bool ignoreAll = false;
     char buffer;
