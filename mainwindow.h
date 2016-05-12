@@ -20,6 +20,8 @@ private slots:
 
     void on_Select_clicked();
 
+    void on_continue_2_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
